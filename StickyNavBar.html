@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sticky Navbar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        #logo{
+            width: 170px;
+            height: auto px;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        #menu-bar li{
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 10px;
+            color: white;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #about-img{
+            width: 100%;
+        }
+        p{
+            text-align: justify;
+        }
+        .sticky{
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+        #unorderedList{
+            margin: 0px;
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://image.freepik.com/free-vector/pure-natural-ingredients-green-label-with-leaves_1017-33237.jpg"  id="logo" alt="">
+    </div>
+    <nav id="menu-bar">
+        <ul id="unorderedList">
+            <li> Home </li>
+            <li>About Us </li>
+            <li>Our Team </li>
+            <li> Clients </li>
+            <li> Contact Us </li>
+        </ul>
+    </nav>
+    <div id="container">
+        <h1> About Us </h1>
+        <img id="about-img" src="https://tyagain.com/wp-content/uploads/2019/10/iStock_000039291924_Medium.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit tempore magnam error illum, aliquam in qui doloremque quidem omnis voluptatibus excepturi laborum. Inventore architecto porro modi cumque voluptatem odit autem repudiandae veritatis nulla? Inventore facere, dolor consequuntur rem magnam commodi omnis sunt error minus quis doloremque asperiores quam vitae voluptatibus? Mollitia, voluptatum? Reprehenderit at laborum numquam pariatur nesciunt, in cum? Ipsa hic aliquam nulla dignissimos fugiat similique veniam quia aperiam officiis blanditiis! Vitae, voluptas suscipit. Mollitia vero fugiat impedit necessitatibus! Eius quaerat perspiciatis ipsum doloremque aliquam maxime amet porro molestiae laudantium fugit, dolorem dolores asperiores, repellendus esse impedit. Quos mollitia laborum quis quaerat modi maiores ea neque consequuntur repellat repellendus blanditiis itaque, natus, eaque distinctio, accusamus expedita commodi tempora. Quasi optio necessitatibus tempore eaque veritatis, assumenda magni pariatur natus vero fugit cupiditate repellendus amet autem ratione a perferendis alias impedit nostrum excepturi. Porro aspernatur laudantium modi reprehenderit ex, quos facilis provident nam sit distinctio ipsa repellat error ullam mollitia dicta nobis blanditiis perspiciatis quisquam eligendi iste harum quam impedit magni culpa! Vero ullam tenetur quos quasi distinctio, laboriosam, quae veritatis, neque natus odio modi aut repellendus perferendis atque excepturi magni nam quo ducimus. Perferendis ab harum impedit autem, nemo blanditiis, facilis error explicabo distinctio quia expedita animi dicta sint sed possimus omnis. Quibusdam, earum quisquam? Vel assumenda vitae dignissimos, non totam soluta similique minima eius alias, ea maiores delectus cumque illum tempora quo hic dolorum facere consectetur labore velit fugit ullam praesentium at distinctio! Accusantium numquam quas aliquam laboriosam aliquid consequuntur. Eveniet veniam doloremque, eaque officiis minus similique explicabo esse consequatur facere autem id pariatur, ex voluptatem? Excepturi, distinctio repellat! Velit doloremque deserunt fuga cumque, labore quis minus minima, expedita quaerat, soluta voluptates? Nisi, assumenda aliquid officiis nostrum harum, distinctio fugiat sed, laudantium quod labore expedita voluptas quasi. Incidunt qui nostrum placeat consectetur rem itaque a ea quo aliquid. Neque ipsam dicta consequatur expedita nulla quisquam dolore unde ducimus, aliquam ab. Quas sit expedita deleniti pariatur aliquam, vero numquam. Culpa, iure nam hic rem odit omnis, ad corrupti eos explicabo qui tempora quaerat laudantium fugit quibusdam deleniti assumenda eius minima reiciendis est laborum. Laboriosam, veritatis in asperiores hic, illo adipisci voluptatem, saepe illum explicabo ratione rerum quaerat magni odio. Quasi eos molestiae vitae voluptatibus impedit consequatur ipsum laudantium beatae, deserunt alias eius dolore officiis placeat facere provident corporis dicta mollitia laborum tenetur reprehenderit ullam, ad nostrum minus doloribus! Quos id sequi aspernatur porro maiores hic. Expedita vel nam mollitia omnis veritatis voluptatum molestias eligendi magni ducimus recusandae cumque enim odit odio nobis, numquam provident laudantium assumenda quod earum, minima debitis voluptatem neque facilis. Libero non praesentium a, iusto nobis magni eos! Natus labore recusandae minus repellat? Odit, accusantium? Voluptatum est distinctio repellendus voluptatibus. In ipsam eveniet corporis eligendi impedit, ipsum natus inventore dolores minus porro, ab illum tempore nobis deserunt consequuntur iusto doloribus corrupti ea libero minima, repudiandae error? Pariatur recusandae sed iste architecto aut illo magni hic eum quasi adipisci repudiandae ad repellat quas dolor id, voluptates earum!
+        </p>
+    </div>
+    <script>
+        window.addEventListener('scroll', function(){
+            let navbar = document.getElementById("menu-bar");
+            if(window.pageYOffset >= 170){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
